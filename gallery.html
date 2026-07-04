@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri — Alif Febrian Nugroho</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Page Transition -->
+    <div class="page-transition"></div>
+
+    <!-- Navbar Light -->
+    <nav class="navbar light">
+        <a href="index.html" class="nav-logo">ALIF<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="gallery.html" class="active">Galeri</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="light-section" style="padding-top: 100px;">
+        <div class="section">
+            <div class="section-header reveal">
+                <h2 class="section-title">Galeri Portfolio</h2>
+                <p class="section-subtitle">Koleksi foto hasil karya</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="gallery-filter reveal">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="formal">Formal</button>
+                <button class="filter-btn" data-filter="travel">Travel</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid reveal">
+                <!-- Formal -->
+                <div class="gallery-item" data-category="formal">
+                    <img src="assets/images/profile-formal.jpg" alt="Foto Formal - Background Merah">
+                    <div class="gallery-overlay">
+                        <h4>Foto Formal</h4>
+                        <p>Background merah</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="formal">
+                    <img src="assets/images/profile-formal-2.jpg" alt="Semi Formal - Rompi Abu-abu">
+                    <div class="gallery-overlay">
+                        <h4>Semi Formal</h4>
+                        <p>Rompi abu-abu dengan dasi hijau</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="formal">
+                    <img src="assets/images/profile-formal-3.jpg" alt="Formal Full - Kemeja Putih">
+                    <div class="gallery-overlay">
+                        <h4>Formal Full</h4>
+                        <p>Kemeja putih dengan dasi hijau</p>
+                    </div>
+                </div>
+
+                <!-- Travel -->
+                <div class="gallery-item" data-category="travel">
+                    <img src="assets/images/travel-1.jpg" alt="Travel - Pegunungan">
+                    <div class="gallery-overlay">
+                        <h4>Pegunungan</h4>
+                        <p>Petualangan di lereng gunung</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="travel">
+                    <img src="assets/images/travel-2.jpg" alt="Travel - Danau">
+                    <div class="gallery-overlay">
+                        <h4>Danau</h4>
+                        <p>Santai di tepi danau</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="lightbox-close"><i class="fas fa-times"></i></span>
+        <span class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></span>
+        <span class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></span>
+        <img src="" alt="" class="lightbox-img">
+    </div>
+
+    <!-- Quotes Section -->
+    <section class="quotes-section light">
+        <div class="quote-carousel">
+            <div class="quote-item active">
+                <p class="quote-text">"Cahaya tak pernah menghapus bayangan; ia hanya mengajarkan bahwa keduanya saling memberi makna."</p>
+            </div>
+            <div class="quote-item">
+                <p class="quote-text">"Ruang yang belum dijelajahi bukanlah kehampaan, melainkan undangan sunyi bagi mereka yang berani melangkah menuju kemungkinan."</p>
+            </div>
+            <div class="quote-item">
+                <p class="quote-text">"Air tak pernah tergesa mengalahkan batu; ia hanya setia mengalir, hingga waktu mengubah yang tampak tak tergoyahkan."</p>
+            </div>
+            <div class="quote-item">
+                <p class="quote-text">"Jembatan tak menghentikan sungai mengalir; ia hanya memberi kesempatan bagi dua tepian untuk saling menyapa."</p>
+            </div>
+            <div class="quote-item">
+                <p class="quote-text">"Biji tak bermimpi menjadi pohon dalam semalam; ia hanya setia bertumbuh, hingga waktu menggenapi bentuknya."</p>
+            </div>
+
+            <div class="quote-dots">
+                <span class="quote-dot active"></span>
+                <span class="quote-dot"></span>
+                <span class="quote-dot"></span>
+                <span class="quote-dot"></span>
+                <span class="quote-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer light">
+        <p>&copy; 2026 Alif Febrian Nugroho. </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
